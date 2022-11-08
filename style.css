@@ -1,14 +1,7 @@
 body {
     padding: 0;
     margin: 0;
-}
-
-.navWhole {
-    position: absolute;
-    width: 100%;
-    background-color: rgba(4, 42, 29, 0.37);
-    box-shadow: 0px 4.5vh 3.5vh 7.5vh rgba(0, 0, 0, 0.75);
-    z-index: 10;
+    overflow-x: hidden;
 }
 
 .wholeContent {
@@ -19,13 +12,94 @@ body {
     background-repeat: no-repeat;
     background-size: 100vw;
     z-index: 1;
-    overflow-x: auto;
+    overflow-y: scroll;
+    overflow-x: hidden;
 }
 
-.temp1 {
+.color-gradient {
     position: absolute;
     width: 100%;
-    height: 500vh;
-    background-color: rgba(190, 12, 12, 0.58);
-    margin-top:  100vh;
+    height: 120vw;
+    background-image: linear-gradient(rgba(17, 10, 26, 0), #4c037c);
+    z-index: 5;
+    margin-top: 10vw;
+}
+
+
+.text-home-welcome {
+    width: 80vw;
+    height: 25vw;
+    position: absolute;
+    /*background-color: rgba(25, 0, 63, 0.71);*/
+    /*box-shadow: inset #5307e8 0 0 5vw;*/
+    margin-left: 10vw;
+    margin-top: 5vw;
+    z-index: 2;
+    border-radius: 5vw;
+    font-size: 1.7vw;
+    text-align: center;
+}
+
+.text-home-interest {
+    width: 80vw;
+    height: 25vw;
+    position: absolute;
+    /*background-color: rgba(25, 0, 63, 0.71);*/
+    /*box-shadow: inset #5307e8 0 0 5vw;*/
+    margin-left: 10vw;
+    margin-top: 40vw;
+    z-index: 2;
+    border-radius: 5vw;
+    font-size: 1.7vw;
+    text-align: center;
+}
+
+.text-home-more {
+    width: 80vw;
+    height: 25vw;
+    position: absolute;
+    /*background-color: rgba(25, 0, 63, 0.71);*/
+    /*box-shadow: inset #5307e8 0 0 5vw;*/
+    margin-left: 10vw;
+    margin-top: 65vw;
+    z-index: 2;
+    border-radius: 5vw;
+    font-size: 1.7vw;
+    text-align: center;
+}
+
+.overview {
+    display: inline-grid;
+    grid-template-columns: auto auto auto;/*add more auto if there are more groups for more rows*/
+    width: 60vw;
+    height: 15vw;
+    position: absolute;
+    margin-top: 90vw;
+    margin-left: 20vw;
+    gap: 2vw;
+    align-content: center;
+}
+
+.groups {
+    width: 15vw;
+    height: 15vw;
+    margin-left: 2vw;
+    background-color: blue;
+    text-align: center;
+}
+
+::-webkit-scrollbar {
+    width: 0.9vw;
+    background-image: linear-gradient(rgba(17, 10, 26, 0), #4c037c);
+}
+
+::-webkit-scrollbar-track {
+    border-radius: 4vw;
+
+    box-shadow:  inset rgba(47, 7, 70, 0.75) 0 0 0.7vw;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: rgba(37, 4, 63, 0.8);
+    border-radius: 4vw;
 }
