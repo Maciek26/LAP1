@@ -26,7 +26,6 @@ function hoverDiv(id) {
 
 function hoverOff(id) {
     var data = id
-    console.log("worked")
     if (data == "hoverDivCam1") {
         hoverBubbleCam1.style.display = "none";
         hoverBubbleCam1.style.animation = "";
