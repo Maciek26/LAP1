@@ -9,11 +9,56 @@
 <script src="../Nav/index.js"></script>
 <div class="whole-projects">
     <div class="color-gradient"></div>
+    <div class="hover-grid">
+        <!-- Bubble with hover elemnt for camera Icon -->
+        <div class="hover-div" style="height: 27vw; width: 30vw;margin-top: -7vw; margin-left: -14vw; z-index: 1" id="hoverDivCam1" onmouseleave="hoverOff(id)">
+            <div class="camera-bubble" id="hoverBubbleCam1" style="background-image: url('../images/WhatsApp Image 2022-11-10 at 10.08.51.jpeg');">
+                <div class="under-bubble1" style="margin-top: 11.5vw; margin-left: -0.5vw; background-color: rgba(0,0,0,0.68)"></div>
+                <div class="under-bubble2" style="margin-top: 13vw; margin-left: -1vw;background-color: rgba(45,44,42,0.66)"></div>
+                <h1 style="font-size: 1.2vw; padding-left: 0.75vw; padding-top: 0.75vw; text-align: center;">Der Alltag eines Musikers</h1>
+                <p style="font-size: 1.15vw; padding: 0.75vw; padding-top: 0.25vw; text-align: center">Ein Zwei Minutiger Kurzfilm der das Leben, eines Musikers, aus zwei Perspektiven Zeigt</p>
+
+            </div>
+            <div class="camera-bubble" id="hoverBubbleCam2" style="margin-left: -2vw; margin-top: -10vw">
+                <div class="under-bubble1" style="margin-top: 11.5vw; margin-left: 11vw"></div>
+                <div class="under-bubble2" style="margin-top: 13vw; margin-left: 14vw;"></div>
+            </div>
+            <div class="camera-bubble" id="hoverBubbleCam3" style="margin-left: -3vw; margin-top: 11vw">
+                <div class="under-bubble1" style="margin-top: -1.5vw; margin-left: 12vw"></div>
+                <div class="under-bubble2" style="margin-top: -3vw; margin-left: 16vw"></div>
+            </div>
+        </div>
+        <!-- Bubble with hover element for art Icon-->
+        <div class="hover-div" id="hoverDivArt" onmouseleave="hoverOff(id)" style="height: 31vw; width: 20vw; margin-top: -12vw;margin-left: -9vw; z-index: 1;
+" >
+            <div class="main-bubble" id="hoverBubbleArt" style="margin-top: 3vw; margin-left: 5vw">
+                <div class="under-bubble1" style="margin-left: 4vw; margin-top: 11.5vw"></div>
+                <div class="under-bubble2" style="margin-left: 3.5vw; margin-top: 13vw"></div>
+                <h1 style="font-size: 1.3vw; padding-left: 0.75vw;  text-align: center;">Eine Szene viele Möglichkeiten</h1>
+                <p style="font-size: 1.15vw; padding: 0.75vw; text-align: center">bla bla bla bla</p>
+            </div>
+
+        </div>
+        <div class="hover-div"></div>
+        <div class="hover-div"></div>
+        <div class="hover-div"></div>
+        <div class="hover-div"></div>
+    </div>
     <div class="icons-grid">
-        <div class="icon-camera"> </div>
-        <div class="icon-art"></div>
+        <div class="icon-camera" id="camIcon" onmouseover="hoverDiv(id)"> </div>
+        <div class="icon-art" id="artIcon" onmouseover="hoverDiv(id)"></div>
         <div class="icon-mc"></div>
+        <div class="icon-panel"></div>
+        <div class="icon-webpage"></div>
+        <div class="icon-360"></div>
+    </div>
+    <div class="groups-grid">
+        <div class="group">§</div>
+        <div class="group">2</div>
+        <div class="group">3</div>
     </div>
 </div>
 </body>
+<script src="index.js"></script>
 </html>
+

@@ -7,17 +7,21 @@ body {
 .whole-projects {
     width: 100%;
     height: 100%;
-    position: absolute;
+    position: fixed;
     display: flex;
-    background-image: url("../images/0CF88C53-374C-4FA5-99CD-74503CA6A982.jpg");
+
+    background-image: url("../images/lagerhaus1jpeg.jpeg");
     background-repeat: no-repeat;
     background-size: 100vw;
+    background-position-y: -10vw;
+    overflow-y: scroll;
+    overflow-x: hidden;
 }
 
 .color-gradient {
     width: 100%;
     height: 100%;
-    background-image: linear-gradient(rgba(243, 241, 245, 0.49), rgba(28, 8, 51, 0.59));
+    background-image: linear-gradient(rgba(243, 241, 245, 0.28), rgba(28, 8, 51, 0.59));
 }
 
 .icons-grid {
@@ -27,7 +31,7 @@ body {
     width: 60vw;
     height: 30vw;
     margin-top: 15vw;
-    margin-left: 20vw;
+    margin-left: 25vw;
     /*box-shadow: inset white 0 0 10vw;*/
     border-radius: 5vw;
     gap: 3vw;
@@ -35,29 +39,260 @@ body {
 
 .icon-camera {
     width: 10vw;
-    height: 10vw;
+    height: 13vw;
     background-image: url("../images/1280px-Noun_Project_camera_icon_308298_cc.svg.png");
     background-repeat: no-repeat;
+    background-position: center;
     background-size: 9vw;
-    margin-left: 5vw;
     margin-top: 2vw;
+    z-index: 1;
 }
 
 .icon-art {
-    width: 10vw;
-    height: 10vw;
+    width: 13vw;
+    height: 13vw;
     background-image: url("../images/img_67865.png");
     background-repeat: no-repeat;
+    background-position: center;
     background-size: 9vw;
     margin-top: 2vw;
+    z-index: 1;
 }
+
 
 .icon-mc {
     width: 10vw;
-    height: 10vw;
+    height: 13vw;
     background-image: url("../images/chip-1710300_1280.png");
     background-repeat: no-repeat;
+    background-position: center;
     background-size: 10vw;
+    margin-top: 2vw;
+    background-color: aqua;
+    z-index: 1;
+}
+.icon-panel {
+    width: 10vw;
+    height: 10vw;
+    background-image: url("../images/solar panel.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 9vw;
+    margin-top: 2vw;
+    background-color: aqua;
+    z-index: 1;
+}
+
+.icon-webpage {
+    width: 10vw;
+    height: 10vw;
+    background-image: url("../images/logo-website-world-wide-web-svg-png-icon-download-10.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 9vw;
+    margin-top: 2vw;
+    background-color: aqua;
+    z-index: 1;
+}
+
+.icon-360 {
+    width: 10vw;
+    height: 10vw;
+    background-image: url("../images/360-degree-rotate-icon.webp");
+    background-repeat: no-repeat;
+    background-size: 10vw;
+    background-position: center;
+    margin-top: 2vw;
+    background-color: aqua;
+    z-index: 1;
+}
+
+.hover-grid {
+    display: inline-grid;
+    grid-template-columns: auto auto auto;
+    position: absolute;
+    width: 60vw;
+    height: 30vw;
+    margin-top: 15vw;
+    margin-left: 25vw;
+    /*box-shadow: inset white 0 0 10vw;*/
+    border-radius: 5vw;
+    gap: 3vw;
+}
+
+.hover-div {
+    width: 11vw;
+    height: 10vw;
+    position: relative;
+    margin-top: 2vw;
+    margin-left: -0.5vw;
+}
+
+.camera-bubble {
+    width: 15vw;
+    height: 11vw;
+    position: relative;
+    border-radius: 2vw;
+    background-color: #b111d5;
+    margin-left: 17.5vw;
+    margin-top: -2vw;
+    display: none;
+    flex-direction: column;
+    align-items:center;
+    background-repeat: no-repeat;
+    background-size: 23vw;
+    color: antiquewhite;
+}
+
+.under-bubble1 {
+    position: absolute;
+    width: 4vw;
+    height: 1vw;
+    border-radius: 0.5vw;
+    background-color: #b111d5;
+    margin-left: 3vw;
+    margin-top: 0.5vw;
+}
+
+.under-bubble2 {
+    position: absolute;
+    width: 2vw;
+    height: 1vw;
+    border-radius: 0.5vw;
+    background-color: #b111d5;
+    margin-left: 2.5vw;
     margin-top: 2vw;
 }
 
+.main-bubble {
+    width: 15vw;
+    height: 11vw;
+    position: absolute;
+    display: none;
+    background-color: #b111d5;
+    border-radius: 2vw;
+    font-size: 0.5vw;
+    flex-direction: column;
+    align-items:center;
+    background-repeat: no-repeat;
+    background-size: 23vw;
+    color: antiquewhite;
+}
+
+@keyframes bubbleAppear {
+    0% {
+        height: 0;
+        width: 0;
+        margin-top: 20vw;
+        opacity: 0;
+        color: transparent;
+
+    }
+    99% {
+        color: transparent;
+    }
+    100% {
+        height: 11vw;
+        width: 15vw;
+        margin-top: -2vw;
+        opacity: 1;
+        color: antiquewhite;
+        white-space: normal;
+    }
+}
+
+@keyframes bubbleAppear2 {
+    0% {
+        height: 0;
+        width: 0;
+        margin-top: 5vw;
+        opacity: 0;
+    }
+    100% {
+        height: 11vw;
+        width: 15vw;
+        margin-top: -10vw;
+        opacity: 1;
+    }
+}
+
+@keyframes bubbleAppear3 {
+    0% {
+        height: 0;
+        width: 0;
+        margin-top: 18vw;
+        opacity: 0;
+    }
+    100% {
+        height: 11vw;
+        width: 15vw;
+        margin-top: 11vw;
+        opacity: 1;
+    }
+}
+
+@keyframes bubbleAppearArt {
+    0% {
+        height: 0;
+        width: 0;
+        margin-top: 11vw;
+        opacity: 0;
+        color: transparent;
+
+    }
+    99% {
+        color: transparent;
+    }
+    100% {
+        height: 11vw;
+        width: 15vw;
+        margin-top: 3vw;
+        opacity: 1;
+        color: antiquewhite;
+        white-space: normal;
+    }
+}
+
+@keyframes iconDown {
+    0% {
+        background-position-y: 2vw;
+    }
+    100% {
+        background-position-y: 4.25vw;
+    }
+}
+
+.groups-grid {
+    width: 100vw;
+    height: 150vw;
+    position: absolute;
+    display: inline-grid;
+    grid-template-columns: auto;
+    margin-top: 50.6vw;
+    row-gap: 5vw;
+    background-image: linear-gradient(rgba(28, 8, 51, 0.59), #2d0b73);
+}
+
+.group {
+    width: 70vw;
+    height: 40vw;
+    position: relative;
+    background-color: #4c037c;
+    align-content: center;
+    background-image: url("#");
+    background-attachment: fixed;
+    margin-left: 15vw;
+    margin-top: 2vw;
+}
+
+/*TO Do:
+Temp zu einem Bereich machen wo man unsere Ausflüge sieht
+Die Gruppen nach Bildern und Beschreibungen fragen
+Home und Projekte Fokusieren
+Bild Auflösung von Home Page kleiner machen
+Im Path das Index weg machen für Schöhnheit
+Copyright einbeachten
+Von Icons das man direkt nach unter zu dem Projekt gebracht wird
+Emils Website einbeten
+
+*/
