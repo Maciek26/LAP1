@@ -4,6 +4,15 @@ body {
     overflow-x: hidden;
 }
 
+.images {
+    display: flex;
+    width: 20vw;
+    height: 15vw;
+    background-repeat: no-repeat;
+    background-size: 20vw;
+    border: black 0.25vw solid;
+}
+
 .whole-projects {
     width: 100%;
     height: 100%;
@@ -62,13 +71,12 @@ body {
 
 .icon-mc {
     width: 10vw;
-    height: 13vw;
+    height: 14.5vw;
     background-image: url("../images/chip-1710300_1280.png");
     background-repeat: no-repeat;
     background-position: center;
     background-size: 10vw;
     margin-top: 2vw;
-    background-color: aqua;
     z-index: 1;
 }
 .icon-panel {
@@ -79,7 +87,6 @@ body {
     background-position: center;
     background-size: 9vw;
     margin-top: 2vw;
-    background-color: aqua;
     z-index: 1;
 }
 
@@ -98,7 +105,7 @@ body {
 .icon-360 {
     width: 10vw;
     height: 10vw;
-    background-image: url("../images/360-degree-rotate-icon.webp");
+    background-image: url("../images/virtual-tour.png");
     background-repeat: no-repeat;
     background-size: 10vw;
     background-position: center;
@@ -142,6 +149,7 @@ body {
     background-repeat: no-repeat;
     background-size: 23vw;
     color: antiquewhite;
+    z-index: 4;
 }
 
 .under-bubble1 {
@@ -207,8 +215,13 @@ body {
         width: 0;
         margin-top: 5vw;
         opacity: 0;
+        color: transparent;
+    }
+    99% {
+        color: transparent;
     }
     100% {
+        color: antiquewhite;
         height: 11vw;
         width: 15vw;
         margin-top: -10vw;
@@ -222,8 +235,13 @@ body {
         width: 0;
         margin-top: 18vw;
         opacity: 0;
+        color: transparent;
+    }
+    99% {
+        color: transparent;
     }
     100% {
+        color: antiquewhite;
         height: 11vw;
         width: 15vw;
         margin-top: 11vw;
@@ -231,7 +249,7 @@ body {
     }
 }
 
-@keyframes bubbleAppearArt {
+@keyframes bubbleAppearArtChip {
     0% {
         height: 0;
         width: 0;
@@ -246,10 +264,33 @@ body {
     100% {
         height: 11vw;
         width: 15vw;
-        margin-top: 3vw;
+        margin-top: 1vw;
         opacity: 1;
         color: antiquewhite;
         white-space: normal;
+    }
+}
+
+@keyframes iconHover {
+    0% {
+        margin-top: 2vw;
+        margin-left: 0vw;
+    }
+    25% {
+        margin-top: 3vw;
+        margin-left: -2vw;
+    }
+    50% {
+        margin-top: 1vw;
+        margin-left: 0vw;
+    }
+    75% {
+        margin-top: 3vw;
+        margin-left: -1vw;
+    }
+    100% {
+        margin-top: 2vw;
+        margin-left: 0vw;
     }
 }
 
@@ -264,7 +305,7 @@ body {
 
 .groups-grid {
     width: 100vw;
-    height: 150vw;
+    height: 250vw;
     position: absolute;
     display: inline-grid;
     grid-template-columns: auto;
@@ -273,6 +314,8 @@ body {
     background-image: linear-gradient(rgba(28, 8, 51, 0.59), #2d0b73);
 }
 
+
+
 .group {
     width: 70vw;
     height: 40vw;
@@ -280,19 +323,34 @@ body {
     background-color: #4c037c;
     align-content: center;
     background-image: url("#");
-    background-attachment: fixed;
     margin-left: 15vw;
     margin-top: 2vw;
+    flex-direction: column;
+    align-items:center;
+    text-align: center;
+    border-radius: 2.5vw;
 }
 
 /*TO Do:
+nav fixen
+handy version machen
 Temp zu einem Bereich machen wo man unsere Ausflüge sieht
 Die Gruppen nach Bildern und Beschreibungen fragen
 Home und Projekte Fokusieren
 Bild Auflösung von Home Page kleiner machen
-Im Path das Index weg machen für Schöhnheit
+Im Path das Index weg machen für Schönheit
 Copyright einbeachten
 Von Icons das man direkt nach unter zu dem Projekt gebracht wird
 Emils Website einbeten
 Den Übergang zwischen temp und about fixen
+Von Icon runter scrollen zur Box
+Panel Icon von der Sonne trennen damit es sich so hovert
+2 mehr icons für herr Weis und gian lern video und eins mehr bei filmen
+videos verlinken
+Temp zu lipawskys Projekt machen
+Reihenfolge der Gruppe:
+-Lern-Video
+-Micro Solarpanel
+-Melanis und emilie film
+
 */

@@ -10,8 +10,8 @@ document.write(`
         <div class="grid-item" id="grid3" onmouseover="onhover(id)"></div>
         <div class="grid-item" id="grid4" onmouseover="onhover(id)"></div>
     </div>
-    <div class="navHome" id="navHome" onmouseover="onhover(id)" ><a style="text-decoration: none; color: antiquewhite" href="index">Home</a></div>
-    <div class="navAbout" id="navAbout" onmouseover="onhover(id)"  ><a style="text-decoration: none; color: antiquewhite" href="projects/index">Projekte</a></div>
+    <div class="navHome" id="navHome" onmouseover="onhover(id)" ><a style="text-decoration: none; color: antiquewhite" href="mace-center.me/LAP1">Home</a></div>
+    <div class="navAbout" id="navAbout" onmouseover="onhover(id)"  ><a style="text-decoration: none; color: antiquewhite" href="mace-center.me/LAP1/projects">Projekte</a></div>
     <div class="navTemp1" id="navTemp1" onmouseover="onhover(id)" ><a style="text-decoration: none; color: antiquewhite" href="../#">Temp</a></div>
     <div class="navTemp2" id="navTemp2" onmouseover="onhover(id)"><a style="text-decoration: none; color: antiquewhite" href="../#">About</a></div>
 
