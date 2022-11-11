@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+</head>
+<style>
+.game-window {
+  margin-left: 25vw;
+  width: 50vw;
+  height: 30vw;
+  background-color: black;
+  z-index: 1;
+}
+
+.player1 {
+    width: 1vw;
+    height: 7.5vw;
+    background-color: #2b3eb7;
+    z-index: 2;
+    left: 40vw;
+    top: 10vw;
+    position: absolute;
+}
+
+.player2 {
+  width: 1vw;
+  height: 7.5vw;
+  background-color: #af1a1a;
+  z-index: 2;
+  margin-left: 45vw;
+}
+
+.ball {
+    width: 2vw;
+    height: 2vw;
+    position: absolute;
+    background-color: red;
+    left: -10vw;
+    border-radius: 2vw;
+    transition: left;
+}
+
+</style>
+<body>
+<div class="game-window">
+  <div class="player1" id="player1"></div>
+  <div class="player2" id="player2"></div>
+  <div class="ball" id="ball"></div>
+</div>
+</body>
+<script src="index.js"></script>
+</html>
