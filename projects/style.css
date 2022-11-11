@@ -18,7 +18,6 @@ body {
     height: 100%;
     position: fixed;
     display: flex;
-
     background-image: url("../images/lagerhaus1jpeg.jpeg");
     background-repeat: no-repeat;
     background-size: 100vw;
@@ -29,7 +28,7 @@ body {
 
 .color-gradient {
     width: 100%;
-    height: 100%;
+    height: 80.6vw;
     background-image: linear-gradient(rgba(243, 241, 245, 0.28), rgba(28, 8, 51, 0.59));
 }
 
@@ -112,6 +111,36 @@ body {
     margin-top: 2vw;
     background-color: aqua;
     z-index: 1;
+}
+
+.icon-video {
+    width: 10vw;
+    height: 10vw;
+    position: absolute;
+    background-image: url("../images/video-icon.png");
+    background-repeat: no-repeat;
+    background-size: 10vw;
+    background-position: center;
+    grid-column-start: 1.5;
+    grid-column-end: 2.5;
+    background-color: aqua;
+    z-index: 1;
+    margin-left: 33.5vw;
+    margin-top: 50vw;
+}
+
+.icon-rubiks {
+    position: absolute;
+    width: 10vw;
+    height: 10vw;
+    background-image: url("../images/rubiks-icon.png");
+    background-repeat: no-repeat;
+    background-size: 10vw;
+    background-position: center;
+    background-color: aqua;
+    z-index: 1;
+    margin-left: 57.5vw;
+    margin-top: 50vw;
 }
 
 .hover-grid {
@@ -305,11 +334,11 @@ body {
 
 .groups-grid {
     width: 100vw;
-    height: 250vw;
+    height: 350vw;
     position: absolute;
     display: inline-grid;
     grid-template-columns: auto;
-    margin-top: 50.6vw;
+    margin-top: 80.6vw;
     row-gap: 5vw;
     background-image: linear-gradient(rgba(28, 8, 51, 0.59), #2d0b73);
 }
@@ -331,26 +360,79 @@ body {
     border-radius: 2.5vw;
 }
 
+.images2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    width: 30vw;
+    height: 20vw;
+    margin-right: 0;
+    box-sizing: border-box;
+    transform-origin: center center;
+    transform: scale(1);
+    scroll-snap-align: center;
+    background-size:40vw;
+    background-repeat: no-repeat;
+    background-position-x: -6vw;
+    background-position-y: -3vw;
+}
+
+.slider {
+    width: 30vw;
+    height: 20vw;
+    display: flex;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    position: absolute;
+    scroll-behavior: smooth;
+    scroll-snap-type: x mandatory;
+}
+
+.frameWeb {
+    width: 50vw;
+    height: 50vw;
+    margin-left: -15vw;
+    margin-top: -37.5vw;
+    border-radius: 2vw;
+}
+
+.closeButton {
+    width: 10vw;
+    height: 4vw;
+    background-color: #1c7ebb;
+    border-radius: 2vw;
+    position: absolute;
+    display: none;
+    font-size: 1vw;
+    margin-left: 65vw;
+    margin-top: -22vw;
+}
+
+.button {
+    width: 13vw;
+    height: 5vw;
+    background-color: #16d6f8;
+    border-radius: 2vw;
+    margin-top: 5vw;
+    position: absolute;
+    display: flex;
+    font-size: 1.5vw;
+    margin-left: 30vw;
+}
+
 /*TO Do:
 nav fixen
+filme einbringen
+-felixs sein film muss net drauf
 handy version machen
 Temp zu einem Bereich machen wo man unsere Ausflüge sieht
 Die Gruppen nach Bildern und Beschreibungen fragen
 Home und Projekte Fokusieren
-Bild Auflösung von Home Page kleiner machen
-Im Path das Index weg machen für Schönheit
 Copyright einbeachten
 Von Icons das man direkt nach unter zu dem Projekt gebracht wird
-Emils Website einbeten
 Den Übergang zwischen temp und about fixen
-Von Icon runter scrollen zur Box
 Panel Icon von der Sonne trennen damit es sich so hovert
-2 mehr icons für herr Weis und gian lern video und eins mehr bei filmen
 videos verlinken
 Temp zu lipawskys Projekt machen
-Reihenfolge der Gruppe:
--Lern-Video
--Micro Solarpanel
--Melanis und emilie film
-
 */

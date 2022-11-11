@@ -14,10 +14,13 @@ var chipIconImage = document.getElementById("chipIcon")
 var panelIconImage = document.getElementById("panelIcon")
 var webIconImage = document.getElementById("webIcon")
 
+var iframWeb = document.getElementById("iframeWeb")
+
 var group1 = document.getElementById("group1")
 var group2 = document.getElementById("group2")
 var group3 = document.getElementById("group3")
 var group4 = document.getElementById("group4")
+var groupEmile = document.getElementById("groupEmile")
 i = 2
 
 function scrollDown(id){
@@ -104,5 +107,35 @@ function hoverOff(id) {
         panelIconImage.style.backgroundPositionY = "2vw"
         hoverBubblePanel.style.display = "none"
         hoverBubblePanel.style.animation = "";
+    }
+}
+
+var displayFrame = false
+var load = window.frames[0].stop()
+
+
+function displayWebsite(){
+    var buttonLoad = document.getElementById("buttonLoad")
+    var closeButton = document.getElementById("closeButton")
+    var linkOpen = document.getElementById("linkOpen")
+    linkOpen.style.display = "flex"
+    buttonLoad.style.display = "flex"
+    closeButton.style.display = "none"
+    if (displayFrame == false) {
+        linkOpen.style.display = "none"
+        buttonLoad.style.display = "none"
+        closeButton.style.display = "flex"
+        displayFrame = true
+        console.log("nope")
+        document.getElementById("frameWeb").innerHTML = "<iframe src='https://emilewaech.wixsite.com/studienheim' style='z-index:1; display: flex;width: 100vw; height: 50vw; margin-top: 5vw;'>"
+        groupEmile.scrollIntoView({behavior: "smooth", block: "center", inline: "nearest"})
+        load = window.frames[30]
+    } else if (displayFrame == true) {
+        linkOpen.style.display = "flex"
+        buttonLoad.style.display = "flex"
+        closeButton.style.display = "none"
+        displayFrame = false
+        console.log("yep")
+        document.getElementById("frameWeb").innerHTML = ""
     }
 }
