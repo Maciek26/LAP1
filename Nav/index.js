@@ -12,8 +12,8 @@ document.write(`
     </div>
     <div class="navHome" id="navHome" onmouseover="onhover(id)" ><a style="text-decoration: none; color: antiquewhite" href="http://mace-center.me/LAP1/">Home</a></div>
     <div class="navAbout" id="navAbout" onmouseover="onhover(id)"  ><a style="text-decoration: none; color: antiquewhite" href="http://mace-center.me/LAP1/projects/">Projekte</a></div>
-    <div class="navTemp1" id="navTemp1" onmouseover="onhover(id)" ><a style="text-decoration: none; color: antiquewhite" href="../#">Ausflüge</a></div>
-    <div class="navTemp2" id="navTemp2" onmouseover="onhover(id)"><a style="text-decoration: none; color: antiquewhite" href="../#">About</a></div>
+    <div class="navTemp1" id="navTemp1" onmouseover="onhover(id)" ><a style="text-decoration: none; color: antiquewhite" href="http://mace-center.me/LAP1/Ausfluege/">Ausflüge</a></div>
+    <div class="navTemp2" id="navTemp2" onmouseover="onhover(id)"><a style="text-decoration: none; color: antiquewhite" href="http://mace-center.me/LAP1/About/">About</a></div>
 
 </div>
 </body>
