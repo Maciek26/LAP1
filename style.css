@@ -91,7 +91,6 @@ img {
 }
 
 .wrapper {
-    background-color: #08dcb5;
     width: 100%;
     display: flex;
     animation: slide 16s infinite;
