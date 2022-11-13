@@ -1,14 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!--
-    Just some things to remember:
-    -If adding a icon to put the same z-index for the hover
-    and the icon
-    -when doing a background image in html in a div put it
-    in '' and not in ""
-
-    -->
     <meta charset="UTF-8">
     <link href="style.css" type="text/css" rel="stylesheet">
     <link href="../Nav/style.css" type="text/css" rel="stylesheet">
@@ -25,7 +17,6 @@
                 <div class="under-bubble2" style="margin-top: 13vw; margin-left: -1vw;background-color: rgba(45,44,42,0.71)"></div>
                 <h1 style="font-size: 1.2vw; padding-left: 0.75vw; padding-top: 0.75vw; text-align: center;">Der Alltag eines Musikers</h1>
                 <p style="font-size: 1.15vw; padding: 0.75vw; padding-top: 0.25vw; text-align: center">Ein Zwei Minutiger Kurzfilm der das Leben, eines Musikers, aus zwei Perspektiven Zeigt</p>
-
             </div>
             <div class="camera-bubble" id="hoverBubbleCam2" onclick="scrollDown(id)" style=" margin-left: -2vw; margin-top: -10vw; background-image: url('../images/WhatsApp Image 2022-11-10 at 10.29.37.jpeg'); background-size: 15vw">
                 <div class="under-bubble1" style="margin-top: 11.5vw; margin-left: 11vw; background-color: rgba(42,33,33,0.69);"></div>
@@ -48,7 +39,6 @@
                 <h1 style="font-size: 1.3vw; padding-left: 0.75vw;  text-align: center;">Eine Szenerie viele Möglichkeiten</h1>
                 <p style="font-size: 1.15vw; padding: 0.5vw; text-align: center; ">Eine Szenerie mithilfe von unterschiedlichen Utensilien dargestellt</p>
             </div>
-
         </div>
         <!-- Bubble with hover for microchip pong-->
         <div class="hover-div" id="hoverDivChip" onmouseleave="hoverOff(id)" style="height: 29vw; width: 20vw; margin-top: -11vw; z-index: 1;">
@@ -69,9 +59,8 @@
         <div class="hover-div"></div>
         <div class="hover-div"></div>
     </div>
-
     <div class="icons-grid">
-        <div class="icon-camera" id="camIcon" onmouseover="hoverDiv(id)"> </div>
+        <div class="icon-camera" id="camIcon" onmouseover="hoverDiv(id)"></div>
         <div class="icon-art" id="artIcon" onmouseover="hoverDiv(id)"></div>
         <div class="icon-mc" id="chipIcon" onmouseover="hoverDiv(id)"></div>
         <div class="icon-panel" id="panelIcon" onmouseover="hoverDiv(id)"></div>
@@ -82,54 +71,98 @@
     <div class="icon-rubiks"></div>
     <div class="groups-grid">
         <div class="group" id="groupEmile" style="background-image: linear-gradient(#074db9, #189858)">
-                <h2 style="font-size: 3vw; font-family: Candara;">Virtuelle Haus Tour</h2>
-                <a style="font-size: 2.3vw; font-family: Candara; margin-left: 1vw"> Damit ihr unser Lagerhaus virtuell besuchen könnt, habe ich eine Website erstellt und fotos von den einzelnen Räumen gemacht. Damit man weiss wo man sich befindet und sich ganz einfach in den nächsten Raum bewegen kann, habe ich Buttons eingefügt, welche beim anklicken einen direkt in den nächsten Raum bringen.<br></a>
-<!--                <div class="button" id="buttonLoad" style="display: flex" onclick="displayWebsite()"><a style="align-self: center; margin-left: 1.75vw;">Website laden?</a></div>-->
-<!--            <div class="closeButton" id="closeButton" onclick="displayWebsite()"><a style="align-self: center; margin-left: 2.75vw;">Schliessen</a></div>-->
-<!--            <div class="frameWeb" id="frameWeb"></div>-->
-            <div id="linkOpen" style="margin-left: 3.5vw; margin-top: 5vw;font-size: 1.5vw"><a>Website via Link öffnen: <a href="https://emilewaech.wixsite.com/studienheim">Klicken sie dazu hier</a></a></div>
+            <h2 style="font-size: 3vw; font-family: Candara;">Virtuelle Haus Tour</h2>
+            <a style="font-size: 2.3vw; font-family: Candara; margin-left: 1vw"> Damit ihr unser Lagerhaus virtuell besuchen könnt, habe ich eine Website erstellt und fotos von den einzelnen Räumen gemacht. Damit man weiss wo man sich befindet und sich ganz einfach in den nächsten Raum bewegen kann, habe ich Buttons eingefügt, welche beim anklicken einen direkt in den nächsten Raum bringen. <br>
+            </a>
+            <!--                <div class="button" id="buttonLoad" style="display: flex" onclick="displayWebsite()"><a style="align-self: center; margin-left: 1.75vw;">Website laden?</a></div>-->
+            <!--            <div class="closeButton" id="closeButton" onclick="displayWebsite()"><a style="align-self: center; margin-left: 2.75vw;">Schliessen</a></div>-->
+            <!--            <div class="frameWeb" id="frameWeb"></div>-->
+            <div id="linkOpen" style="margin-left: 3.5vw; margin-top: 5vw;font-size: 1.5vw">
+                <a>Website via Link öffnen: <a href="https://emilewaech.wixsite.com/studienheim">Klicken sie dazu hier</a>
+                </a>
+            </div>
         </div>
         <div class="group" id="groupGian">
             <h2 style="font-size: 3vw; font-family: Candara;">Ein Film rund ums Thema Parallelwelten</h2>
             <div id="thumbnailGian">
-            <img class="videoGian" src="https://i.ytimg.com/vi/IBqUfixaLS8/maxresdefault.jpg">
-            <div class="play-button"></div>
+                <iframe class="videoGian" src="https://www.youtube.com/embed/IBqUfixaLS8&autoplay=1&mute=10" srcdoc="
+											<style>*{padding:0;margin:0;overflow:hidden}html,body{height:100%}img,span{position:absolute;width:100%;top:0;bottom:0;margin:auto}span{height:1.5em;text-align:center;font:48px/1.5 sans-serif;color:white;text-shadow:0 0 0.5em black}</style>
+											<a href=https://www.youtube.com/embed/IBqUfixaLS8?autoplay=1&mute=10>
+												<img src=https://img.youtube.com/vi/IBqUfixaLS8/hqdefault.jpg alt='Sind Parallelwelten real? Animiertes Lernvideo | Lap 01 Schulprojekt'>
+													<span>▶</span>
+												</a>" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen title="Sind Parallelwelten real? Animiertes Lernvideo | Lap 01 Schulprojekt">
+                </iframe>
             </div>
-<!--            <iframe style="z-index: 1; width: 40vw; height: 20vw" src='https://www.youtube.com/embed/IBqUfixaLS8?autoplay=1' title="Sind Parallelwelten real? Animiertes Lernvideo | Lap 01 Schulprojekt" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>-->
         </div>
-        <!--First film group emilie and ...-->
+        <!-- film group diana kashvi leticia-->
+        <div class="group" id="group3" style="background-image: linear-gradient(#d1bc8a,  #e0ccab)">
+            <h2 style="font-size: 3vw; font-family: Candara;">Gleiche Welt aber doch so verschieden</h2>
+            <a style="font-size: 2.1vw; font-family: Candara; margin-left: 1vw"> Wir zeigen das Leben von einer Frau mit einer Tochter in zwei Parallelwelten, in einer Welt ist sie reich, jedoch unzufrieden mit ihrem Leben, in der anderen Welt ist sie arm, aber hat eine gute Beziehung zu ihrer Tochter. <br>
+            </a>
+            <iframe src="https://player.vimeo.com/video/770461898?h=18d7754c49" style="width: 45vw; height: 20vw; margin-top: 2vw" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <!--Nicos & Tenzin Solar -->
+        <div class="group" id="group5">
+            <h2 style="font-size: 3vw; font-family: Candara;">Licht gesteuertes Solarpanel</h2>
+            <a style="font-size: 2.3vw; font-family: Candara; margin-left: 1vw"> In diesem Projekt wollten wir mithilfe einer ESP32, drei Fotowiderständen ein Motor dazu bringen sich der Sonne richten lassen, sodass angeschlossene Solarplatten der Sonne folgen können. <br>
+            </a>
+            <div class="images" style="background-image: url(); background-size: 30vw; background-position-x: -3vw; height: 15vw; width: 20vw; margin-left: 10vw; margin-top: 5vw"></div>
+            <div class="images" style="background-image: url(); background-size: 25vw; background-position-x: -4vw; height: 15vw; width: 20vw; margin-left: 40vw; margin-top: -15.5vw;"></div>
+        </div>
+        <!--group Melanie, Emelie-->
+        <div class="group" id="groupMelanie" style="background-image: linear-gradient(#083603, #0a1801)">
+            <h2 style="font-size: 3vw; font-family: 'Arial Black';">Reverse Kurzfilm</h2>
+            <iframe class="videoGian" src="https://www.youtube.com/embed/s9YflOC3n60&autoplay=1&mute=10" srcdoc="
+													<style>*{padding:0;margin:0;overflow:hidden}html,body{height:100%}img,span{position:absolute;width:100%;top:0;bottom:0;margin:auto}span{height:1.5em;text-align:center;font:48px/1.5 sans-serif;color:white;text-shadow:0 0 0.5em black}</style>
+													<a href=https://www.youtube.com/embed/s9YflOC3n60?autoplay=1&mute=10>
+														<img src=https://img.youtube.com/vi/s9YflOC3n60/hqdefault.jpg alt='Sind Parallelwelten real? Animiertes Lernvideo | Lap 01 Schulprojekt'>
+															<span>▶</span>
+														</a>" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen title="Sind Parallelwelten real? Animiertes Lernvideo | Lap 01 Schulprojekt">
+            </iframe>
+        </div>
+        <!--group Aary & Marco-->
+        <div class="group" id="groupAary" style="background-image: linear-gradient(#f3f0f0, #797777)">
+            <h2 style="font-size: 3vw; font-family: 'Arial Black';">Pong Game</h2>
+            <div class="images" style="background-image: url('../images/pong-photo1.png'); background-size: 15vw; height: 11vw; width: 14.7vw; float: right; margin: 1vw;"></div>
+            <a style="font-size: 2.15vw; font-family: Arial; margin-left: 1vw;">In unserem Projekt haben wir das Spiel Pong, auf einem Mikrocontroller (den ESP32) von Grund auf programmiert. Wir haben als Programmiersprache Micropython verwendet. <br>
+                <div class="images" style="background-image: url('../images/ESP32.png'); background-size: 14vw; background-position-y: -2vw; height: 10vw; width: 17vw; float: left; margin: 1vw; border: none"></div>Man kann unser Pong Spiel zu zweit spielen, mit Knöpfen welche mit dem Mikrocontroller verknüpft sind. Einfacher gesagt als getan.
+            </a>
+        </div>
+        <!--film group felix, paul, can, alessandro, Mathias-->
+        <div class="group" id="group2" style="background-image: linear-gradient(#3e83e7, #18d5c4)">
+            <h2 style="font-size: 3vw; font-family: 'Arial Black';">Zweite Chancen</h2>
+            <div class="images" style="background-image: url('../images/second-chances-photo1.jpeg'); background-size: 30vw; background-position-x: -3vw; height: 11vw; width: 20vw; float: right; margin: 1vw;"></div>
+            <a style="font-size: 1.9vw; font-family: Arial; margin-left: 1vw">In unserem Film geht es um einen Jungen der während der Halloweenzeit/ Jagtsaison von einem durchgedrehten Jäger mit einem Eisbär verwechselt wird. Darauf hin verfolgt ihn der Jäger und erschiesst ihn. Doch plötzlich wascht der Junge wieder in seinem Bett auf mit einem komischen Mann neben sich. <br>
+                <div class="images" style="background-image: url('../images/second-chances-photo2.jpeg'); background-size: 22vw; background-position-x: -2.5vw; height: 10vw; width: 17vw; float: left; margin: 1vw"></div> Dieser sagt ihm wie er sich vor dem Tod retten kann. Darauf hin beginnt der Tag von neuem und die tragische Geschichte wiederholt sich aber diesmal ist etwas anders.
+            </a>
+        </div>
+        <!--group Herr Weiss-->
+        <div class="group" id="groupWeiss" style="background-image: linear-gradient(#3e83e7, #18d5c4)">
+            <h2 style="font-size: 3vw; font-family: 'Arial Black';">Roboter gegen Rubiks Qube</h2>
+            <div class="images" style="background-image: url(''); background-size: 30vw; background-position-x: -3vw; height: 11vw; width: 20vw; float: right; margin: 1vw;"></div>
+            <a style="font-size: 1.9vw; font-family: Arial; margin-left: 1vw">In <br>
+                <div class="images" style="background-image: url(''); background-size: 25vw; background-position-x: -4vw; height: 10vw; width: 17vw; float: left; margin: 1vw"></div> Bearbeitung
+            </a>
+        </div>
+        <!--film group emlina and Vivien...-->
         <div class="group" id="group1" style="background-image: linear-gradient(rgba(196,185,185,0.87), #1f1a1a)">
             <h2 style="font-size: 3vw; font-family: Candara;">Der Alltag eines Musikers</h2>
             <div class="images" style="background-image: url('../images/WhatsApp Image 2022-11-10 at 10.02.16.jpeg'); height: 11vw; width: 18vw; float: right; margin: 1vw;"></div>
             <a style="font-size: 2vw; font-family: Candara; margin-left: 1vw"> Wir haben einen Kurzfilm (ungefähr 2 min) gedreht. Dabei haben wir ihn mit selbstaufgenommer Musik hinterlegt. Der Kurzfilm soll zwei verschiedene Perspektiven, sogenannte Parallelwelten darstellen. Die eine stellt das Leben auf optimistische Weise, die andere auf pessimistische Weise dar. Wir wollten den Alltag eines Musikers darstellen wobei die Hintergrundmusik mit seinem Spiel verschmelzen soll.</a>
         </div>
-        <!--Second film group felix, paul, can, allesandro, Mathias-->
-        <div class="group" id="group2" style="background-image: linear-gradient(#3e83e7, #18d5c4)">
-            <h2 style="font-size: 3vw; font-family: 'Arial Black';">Zweite Chancen</h2>
-            <div class="images" style="background-image: url('../images/second-chances-photo1.jpeg'); background-size: 30vw; background-position-x: -3vw; height: 11vw; width: 20vw; float: right; margin: 1vw;"></div>
-            <a style="font-size: 1.9vw; font-family: Arial; margin-left: 1vw">In unserem Film geht es um einen Jungen der während der Halloweenzeit/ Jagtsaison von einem durchgedrehten Jäger mit einem Eisbär verwechselt wird. Darauf hin verfolgt ihn der Jäger und erschiesst ihn. Doch plötzlich wascht der Junge wieder in seinem Bett auf mit einem komischen Mann neben sich.<br><div class="images" style="background-image: url('../images/second-chances-photo2.jpeg'); background-size: 25vw; background-position-x: -4vw; height: 10vw; width: 17vw; float: left; margin: 1vw"></div> Dieser sagt ihm wie er sich vor dem Tod retten kann. Darauf hin beginnt der Tag von neuem und die tragische Geschichte wiederholt sich aber diesmal ist etwas anders.</a>
-        </div>
-        <!-- Third movie group diana kashvi leticia-->
-        <div class="group" id="group3" style="background-image: linear-gradient(#8913ce, #13537a)">
-            <h2 style="font-size: 3vw; font-family: Candara;">Gleiche Welt aber doch so verschieden</h2>
-            <a style="font-size: 2.3vw; font-family: Candara; margin-left: 1vw"> Wir zeigen das Leben von einer Frau mit einer Tochter in zwei Parallelwelten, in einer Welt ist sie reich, jedoch unzufrieden mit ihrem Leben, in der anderen Welt ist sie arm, aber hat eine gute Beziehung zu ihrer Tochter. <!-- <br><div class="images" style="background-image: url('#'); background-size: 25vw; background-position-x: -4vw; height: 10vw; width: 17vw; float: left; margin: 1vw"></div>--></a>
-            <div class="images" style="background-image: url('../images/third-group-photo2.png'); background-size: 23.1vw;height: 13vw; width: 23vw; margin-left: 23vw; margin-top: 2vw; border: #1a3042 0.3vw solid;"></div>
-        </div>
         <!-- art group sky & milena-->
         <div class="group" id="group4" style="background-image: linear-gradient(#5817dc, #19c093)">
             <h2 style="font-size: 3vw; font-family: Candara;">Eine Szenerie viele Möglichkeiten</h2>
-            <a style="font-size: 2.3vw; font-family: Candara; margin-left: 1vw"> Wir haben eine immer gleichbleibende Szene mithilfe von verschiedenen Utensilien und Perspektiven unterschiedlich dargestellt.  <br><div class="images" style="background-image: url('../images/art-photo2.png'); background-size: 17.5vw;  height: 10vw; width: 17vw; float: left; margin: 1vw; border: #0a4f2d 0.2vw solid;"></div>Durch das immer gleiche Motiv haben wir Parallelen zwischen unseren Bildern hergestellt. </a>
+            <a style="font-size: 2.3vw; font-family: Candara; margin-left: 1vw"> Wir haben eine immer gleichbleibende Szene mithilfe von verschiedenen Utensilien und Perspektiven unterschiedlich dargestellt. <br>
+                <div class="images" style="background-image: url('../images/art-photo2.png'); background-size: 17.5vw;  height: 10vw; width: 17vw; float: left; margin: 1vw; border: #0a4f2d 0.2vw solid;"></div>Durch das immer gleiche Motiv haben wir Parallelen zwischen unseren Bildern hergestellt.
+            </a>
             <div class="images" style="background-image: url('../images/art-photo1.png'); background-size:23vw; background-position-y: -6vw;align-self: center; margin-left: 24vw; margin-top: 3vw; height: 14vw; width: 22vw;"></div>
-        </div>
-        <div class="group" id="group5">
-            <h2 style="font-size: 3vw; font-family: Candara;">Licht gesteuertes Solarpanel</h2>
-            <a style="font-size: 2.3vw; font-family: Candara; margin-left: 1vw"> In diesem Projekt wollten wir mithilfe einer ESP32, drei Fotowiderständen ein Motor dazu bringen sich der Sonne richten lassen, sodass angeschlossene Solarplatten der Sonne folgen können. <br></a>
-            <div class="images" style="background-image: url(); background-size: 30vw; background-position-x: -3vw; height: 15vw; width: 20vw; margin-left: 10vw; margin-top: 5vw"></div>
-            <div class="images" style="background-image: url(); background-size: 25vw; background-position-x: -4vw; height: 15vw; width: 20vw; margin-left: 40vw; margin-top: -15.5vw;"></div>
         </div>
         <div class="group" id="group6">
             <h2 style="font-size: 3vw; font-family: Candara;"></h2>
-            <a style="font-size: 2.3vw; font-family: Candara; margin-left: 1vw"> <br></a>
+            <a style="font-size: 2.3vw; font-family: Candara; margin-left: 1vw">
+                <br>
+            </a>
             <div class="slider">
                 <div class="images2" style="background-image: url('../images/WhatsApp Image 2022-11-10 at 10.29.37.jpeg')"></div>
                 <div class="images2" style="background-image: url('../images/WhatsApp Image 2022-11-10 at 10.29.37.jpeg')"></div>
@@ -144,4 +177,3 @@
 <script src="../index.js"></script>
 <script src="index.js"></script>
 </html>
-

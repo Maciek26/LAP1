@@ -111,7 +111,7 @@ function hoverOff(id) {
     }
 }
 const videoID = "IBqUfixaLS8"
-var thumbnailGian = document.getElementById("thumbnailGian")
+const thumbnailGian = document.getElementById("thumbnailGian")
     thumbnailGian.addEventListener("click", function (){
     groupGian.removeChild(thumbnailGian)
         const responsiveVideoContainer = document.createElement("div");
