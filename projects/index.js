@@ -20,6 +20,7 @@ var group1 = document.getElementById("group1")
 var group2 = document.getElementById("group2")
 var group3 = document.getElementById("group3")
 var group4 = document.getElementById("group4")
+var groupGian = document.getElementById("groupGian")
 var groupEmile = document.getElementById("groupEmile")
 i = 2
 
@@ -109,33 +110,54 @@ function hoverOff(id) {
         hoverBubblePanel.style.animation = "";
     }
 }
+const videoID = "IBqUfixaLS8"
+var thumbnailGian = document.getElementById("thumbnailGian")
+    thumbnailGian.addEventListener("click", function (){
+    groupGian.removeChild(thumbnailGian)
+        const responsiveVideoContainer = document.createElement("div");
+        responsiveVideoContainer.classList.add(
+            "embed-responsive",
+            "embed-responsive-16by9"
+        );
+        const videoIframe = document.createElement("iframe");
 
-var displayFrame = false
-var load = window.frames[0].stop()
+        videoIframe.classList.add("embed-responsive-item");
 
+        videoIframe.src = `https://www.youtube.com/embed/${videoID}?autoplay=1&mute=1`;
 
-function displayWebsite(){
-    var buttonLoad = document.getElementById("buttonLoad")
-    var closeButton = document.getElementById("closeButton")
-    var linkOpen = document.getElementById("linkOpen")
-    linkOpen.style.display = "flex"
-    buttonLoad.style.display = "flex"
-    closeButton.style.display = "none"
-    if (displayFrame == false) {
-        linkOpen.style.display = "none"
-        buttonLoad.style.display = "none"
-        closeButton.style.display = "flex"
-        displayFrame = true
-        console.log("nope")
-        document.getElementById("frameWeb").innerHTML = "<iframe src='https://emilewaech.wixsite.com/studienheim' style='z-index:1; display: flex;width: 100vw; height: 50vw; margin-top: 5vw;'>"
-        groupEmile.scrollIntoView({behavior: "smooth", block: "center", inline: "nearest"})
-        load = window.frames[30]
-    } else if (displayFrame == true) {
-        linkOpen.style.display = "flex"
-        buttonLoad.style.display = "flex"
-        closeButton.style.display = "none"
-        displayFrame = false
-        console.log("yep")
-        document.getElementById("frameWeb").innerHTML = ""
-    }
-}
+        videoIframe.setAttribute("allow", "autoplay");
+
+        responsiveVideoContainer.appendChild(videoIframe);
+
+        thumbnailGian.appendChild(responsiveVideoContainer);
+})
+
+//
+// var displayFrame = false
+// var load = window.frames[0].stop()
+//
+// function displayWebsite(){
+//     var buttonLoad = document.getElementById("buttonLoad")
+//     var closeButton = document.getElementById("closeButton")
+//     var linkOpen = document.getElementById("linkOpen")
+//     linkOpen.style.display = "flex"
+//     buttonLoad.style.display = "flex"
+//     closeButton.style.display = "none"
+//     if (displayFrame == false) {
+//         linkOpen.style.display = "none"
+//         buttonLoad.style.display = "none"
+//         closeButton.style.display = "flex"
+//         displayFrame = true
+//         console.log("nope")
+//         document.getElementById("frameWeb").innerHTML = "<iframe src='https://emilewaech.wixsite.com/studienheim' style='z-index:1; display: flex;width: 100vw; height: 50vw; margin-top: 5vw;'>"
+//         groupEmile.scrollIntoView({behavior: "smooth", block: "center", inline: "nearest"})
+//         load = window.frames[30]
+//     } else if (displayFrame == true) {
+//         linkOpen.style.display = "flex"
+//         buttonLoad.style.display = "flex"
+//         closeButton.style.display = "none"
+//         displayFrame = false
+//         console.log("yep")
+//         document.getElementById("frameWeb").innerHTML = ""
+//     }
+// }

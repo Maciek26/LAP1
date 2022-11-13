@@ -9,14 +9,13 @@ var BMLine1 = document.getElementById("BMLine1")
 var BMLine2 = document.getElementById("BMLine2")
 var BMLine3 = document.getElementById("BMLine3")
 
-var i = 1
+var i = 0
 function onhover(id) {
     i += 1
     var data = id
-    if (i == 2) {
+    if (i == 3 || i == 2) {
     var data = id
-    var marginLeft;
-    console.log(data)
+    var marginLeft = ""
     if (data == "navHome") {
         marginLeft = "51.5vw"
     } else if ( data == "navAbout") {
@@ -99,11 +98,6 @@ function onhover(id) {
         line1.style.animation = "lineshiftLeft10 1s"
         line2.style.marginLeft = "81.5vw"
         line2.style.animation = "lineshiftLeft10 1s"
-    } else if (data == "grid3" && line1.style.marginLeft == "71.5vw") {
-        line1.style.marginLeft == "81.5vw"
-        line1.style.animation = "lineshiftRight3 1s"
-        line2.style.marginLeft == "81.5vw"
-        line2.style.animation = "lineshiftRight3 1s"
     }
 }
 

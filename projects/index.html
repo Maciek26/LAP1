@@ -84,14 +84,18 @@
         <div class="group" id="groupEmile" style="background-image: linear-gradient(#074db9, #189858)">
                 <h2 style="font-size: 3vw; font-family: Candara;">Virtuelle Haus Tour</h2>
                 <a style="font-size: 2.3vw; font-family: Candara; margin-left: 1vw"> Damit ihr unser Lagerhaus virtuell besuchen könnt, habe ich eine Website erstellt und fotos von den einzelnen Räumen gemacht. Damit man weiss wo man sich befindet und sich ganz einfach in den nächsten Raum bewegen kann, habe ich Buttons eingefügt, welche beim anklicken einen direkt in den nächsten Raum bringen.<br></a>
-                <div class="button" id="buttonLoad" style="display: flex" onclick="displayWebsite()"><a style="align-self: center; margin-left: 1.75vw;">Website laden?</a></div>
-            <div class="closeButton" id="closeButton" onclick="displayWebsite()"><a style="align-self: center; margin-left: 2.75vw;">Schliessen</a></div>
-            <div class="frameWeb" id="frameWeb"></div>
-            <div id="linkOpen" style="margin-left: 3.5vw; font-size: 1.5vw"><a>Oder via Link öffnen: <a href="https://emilewaech.wixsite.com/studienheim">Klicken sie dazu hier</a></a></div>
+<!--                <div class="button" id="buttonLoad" style="display: flex" onclick="displayWebsite()"><a style="align-self: center; margin-left: 1.75vw;">Website laden?</a></div>-->
+<!--            <div class="closeButton" id="closeButton" onclick="displayWebsite()"><a style="align-self: center; margin-left: 2.75vw;">Schliessen</a></div>-->
+<!--            <div class="frameWeb" id="frameWeb"></div>-->
+            <div id="linkOpen" style="margin-left: 3.5vw; margin-top: 5vw;font-size: 1.5vw"><a>Website via Link öffnen: <a href="https://emilewaech.wixsite.com/studienheim">Klicken sie dazu hier</a></a></div>
         </div>
         <div class="group" id="groupGian">
             <h2 style="font-size: 3vw; font-family: Candara;">Ein Film rund ums Thema Parallelwelten</h2>
-            <iframe style="z-index: 1; width: 40vw; height: 20vw" src='https://www.youtube.com/embed/IBqUfixaLS8' title="Sind Parallelwelten real? Animiertes Lernvideo | Lap 01 Schulprojekt" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <div id="thumbnailGian">
+            <img class="videoGian" src="https://i.ytimg.com/vi/IBqUfixaLS8/maxresdefault.jpg">
+            <div class="play-button"></div>
+            </div>
+<!--            <iframe style="z-index: 1; width: 40vw; height: 20vw" src='https://www.youtube.com/embed/IBqUfixaLS8?autoplay=1' title="Sind Parallelwelten real? Animiertes Lernvideo | Lap 01 Schulprojekt" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>-->
         </div>
         <!--First film group emilie and ...-->
         <div class="group" id="group1" style="background-image: linear-gradient(rgba(196,185,185,0.87), #1f1a1a)">
@@ -120,8 +124,8 @@
         <div class="group" id="group5">
             <h2 style="font-size: 3vw; font-family: Candara;">Licht gesteuertes Solarpanel</h2>
             <a style="font-size: 2.3vw; font-family: Candara; margin-left: 1vw"> In diesem Projekt wollten wir mithilfe einer ESP32, drei Fotowiderständen ein Motor dazu bringen sich der Sonne richten lassen, sodass angeschlossene Solarplatten der Sonne folgen können. <br></a>
-            <div class="images" style="background-image: url(''); background-size: 30vw; background-position-x: -3vw; height: 15vw; width: 20vw; margin-left: 10vw; margin-top: 5vw"></div>
-            <div class="images" style="background-image: url(''); background-size: 25vw; background-position-x: -4vw; height: 15vw; width: 20vw; margin-left: 40vw; margin-top: -15.5vw;"></div>
+            <div class="images" style="background-image: url(); background-size: 30vw; background-position-x: -3vw; height: 15vw; width: 20vw; margin-left: 10vw; margin-top: 5vw"></div>
+            <div class="images" style="background-image: url(); background-size: 25vw; background-position-x: -4vw; height: 15vw; width: 20vw; margin-left: 40vw; margin-top: -15.5vw;"></div>
         </div>
         <div class="group" id="group6">
             <h2 style="font-size: 3vw; font-family: Candara;"></h2>
@@ -137,6 +141,7 @@
     </div>
 </div>
 </body>
+<script src="../index.js"></script>
 <script src="index.js"></script>
 </html>
 
