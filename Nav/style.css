@@ -259,3 +259,30 @@
     background-color: rgba(37, 4, 63, 0.8);
     border-radius: 4vw;
 }
+
+@media screen and (max-width: 1000px) {
+    .navHome {
+        width: 4vw;
+        height: 3vw;
+        font-size: 5vw;
+        margin-left: 22.5vw;
+    }
+    .navAbout {
+        width: 4vw;
+        height: 3vw;
+        font-size: 5vw;
+        margin-left: 40vw;
+    }
+    .navTemp1 {
+        width: 4vw;
+        height: 3vw;
+        font-size: 5vw;
+        margin-left: 60vw;
+    }
+    .navTemp2 {
+        width: 4vw;
+        height: 3vw;
+        font-size: 5vw;
+        margin-left: 82.5vw;
+    }
+}

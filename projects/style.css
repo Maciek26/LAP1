@@ -409,14 +409,25 @@ body {
     .group {
         text-transform: uppercase;
         margin-left: 5vw;
-        font-size: 7vw !important;
-        font-weight: 700;
+
         width: 90vw;
         height: 80vw;
     }
     .whole-projects {
         background-size: 310vw;
         background-position-x: -5vw;
+    }
+    .group-text {
+        width: 100vw;
+        height: 50vw;
+        font-weight: 700;
+        font-size: 4vw !important;
+    }
+    .group-text2 {
+        width: 100vw;
+        height: 50vw;
+        font-weight: 700;
+        font-size: 3.7vw !important;
     }
 }
 
