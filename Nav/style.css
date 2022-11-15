@@ -286,3 +286,14 @@
         margin-left: 82.5vw;
     }
 }
+
+@media screen and (max-width: 1000px) {
+    .line1 {
+        display: none;
+        opacity: 0;
+    }
+    .line2 {
+        display: none;
+        opacity: 0;
+    }
+}
