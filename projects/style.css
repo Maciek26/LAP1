@@ -395,12 +395,36 @@ body {
     margin-top: 2vw;
 }
 
+@media screen and (max-width: 2524px) {
+    .whole-projects {
+        background-size: 120vw;
+        background-position-x: -5vw;
+    }
+}
 
+@media screen and (max-width: 1000px) {
+    .groups-grid {
+        height: 900vw;
+    }
+    .group {
+        text-transform: uppercase;
+        margin-left: 5vw;
+        font-size: 7vw !important;
+        font-weight: 700;
+        width: 90vw;
+        height: 80vw;
+    }
+    .whole-projects {
+        background-size: 310vw;
+        background-position-x: -5vw;
+    }
+}
 
 /*TO Do:
 handy version machen
 Frau Lipawskys Video in Ausflüge rein packen
 Copyright einbeachten
+falls ein icon geöffnet wird alle anderen geschlossen werden
 Von Icons das man direkt nach unter zu dem Projekt gebracht wird
 Panel Icon von der Sonne trennen damit es sich so hovert
 */
