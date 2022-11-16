@@ -19,7 +19,7 @@ var iframWeb = document.getElementById("iframeWeb")
 var group1 = document.getElementById("group1")
 var group2 = document.getElementById("group2")
 var group3 = document.getElementById("group3")
-var group4 = document.getElementById("group4")
+var groupArt = document.getElementById("groupArt")
 var groupGian = document.getElementById("groupGian")
 var groupEmile = document.getElementById("groupEmile")
 i = 2
@@ -32,6 +32,8 @@ function scrollDown(id){
         group2.scrollIntoView({behavior: "smooth", block: "center", inline: "nearest"})
     } else if (data == "hoverBubbleCam3") {
         group3.scrollIntoView({behavior: "smooth", block: "center", inline: "nearest"})
+    } else if (data == "hoverDivArt") {
+        groupArt.scrollIntoView({behavior: "smooth", block: "center", inline: "nearest"})
     }//else if (data == "group4") {
       //  group4.scrollIntoView({behavior: "smooth", block: "center", inline: "nearest"})
     //}
